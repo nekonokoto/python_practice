@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 16 20:03:49 2020
 
-@author: micha
-"""
 import requests
 
 import urllib.request
