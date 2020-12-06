@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 from multiprocessing.dummy import Pool as ThreadPool
@@ -18,7 +14,7 @@ import requests
 from selenium import webdriver
 
 
-# In[2]:
+
 
 
 chrome_path="E:\jrbook\chromedriver.exe"
@@ -29,11 +25,11 @@ web.get('https://bbs.yamibo.com/member.php?mod=logging&action=login')
 
 element_user=web.find_element_by_name('username')
 
-element_user.send_keys('貓毛色')
+element_user.send_keys('user')
 
 element_pass=web.find_element_by_name('password')
 
-element_pass.send_keys('bngjti59')
+element_pass.send_keys('password')
 
 cookie=[]
 commit = web.find_element_by_name('loginsubmit')
@@ -51,7 +47,7 @@ x=50296
 
 
 
-# In[ ]:
+
 
 
 for i in range(1,50):
@@ -72,7 +68,7 @@ for i in range(1,50):
     resw=web.find_elements_by_xpath("//div[@id='pt']//a")
     try:
     
-        if resw[-2].text == '中文百合漫画区': 
+        if resw[-2].text == '中文漫画区': 
             pos=0
             m=0
             if os.path.isdir(folder_path):
